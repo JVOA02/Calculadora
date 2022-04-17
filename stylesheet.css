@@ -2,49 +2,72 @@
     padding: 0px;
     border:0px;
 }
-    .fundo{
-    background-image: linear-gradient(45deg, #dcdcdc,#fff);
+:root{
+    --body-bg:#dcdcdc ;
+    --background-calculadora:rgba(224, 224, 224, 0.8);
+    --bottom-equal:rgb(230, 167, 84);
+    --bottons-normal: #dcdcdc;
+    --color-shadow:#738396;
+    --color-text:#000;
+    --hover-bottons-normal:#c7c6c6;
+    --hover-botton-equal:rgb(212, 136, 49);
+}
+.dark-mode:root{
+    --body-bg:rgb(92, 92, 92);
+    --background-calculadora:#5c5c5c;
+    --bottom-equal:rgb(84, 99, 230);
+    --bottons-normal: #5c5c5c;
+    --color-shadow:rgba(230, 230, 230, 0.712);
+    --color-text:#fff;
+    --hover-bottons-normal:#7a7878;
+    --hover-botton-equal:rgb(41, 55, 187);
+}
+
+.fundo{
     height: 100vh;
-    color: rgb(0, 0, 0);
+    background-color: var(--body-bg);
+    color: var(--color-text);
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
 .calculadora{
     position:absolute;
-    background-color: rgba(224, 224, 224, 0.8);
+    background-color: var(--background-calculadora);
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     border-radius: 15px;
     padding: 15px;
     box-shadow: 11px 8px 6px 10px rgba(57,57,57,0),
-    2px 5px 16px 0px #567292;
+    2px 5px 16px 0px var(--color-shadow);
+    
 }
 .botão{
     width: 50px;
     height: 50px;
     font-size: 25px;
-    background-color: #dcdcdc;
+    background-color: var(--bottons-normal);
     cursor:pointer;
     border:none;
     margin:3px;
     border-radius: 8px;
-    box-shadow: 11px 8px 6px 10px rgba(57,57,57,0),
-    2px 3px 8px 0px #738396;
+    box-shadow: 11px 8px 6px 10px rgba(209, 209, 209, 0) ,
+    2px 3px 8px 0px var(--color-shadow);
+    color: var(--color-text);
 }
 .cod0{
     width: 116px;
 }
 #cod_{
     height: 116px;
-    background-color:rgb(230, 167, 84);
+    background-color:var(--bottom-equal);
     color:#fff;
 }
 .botão:hover{
-    background-color:#c7c6c6;
+    background-color:var(--hover-bottons-normal);
 }
 #cod_:hover{
-    background-color:rgb(212, 136, 49);
+    background-color:var(--hover-botton-equal);
 }
 #resultado{
     border-radius: 8px;
@@ -56,4 +79,14 @@
     color: #000;
     text-align:right;
     padding: 5px;    
+}
+.switch{
+    position: absolute;
+    width: 120px;
+    border-radius: 7px;
+    box-shadow: 11px 8px 6px 10px rgba(209, 209, 209, 0) ,
+    2px 3px 8px 0px var(--color-shadow);
+    background-color: transparent;
+    top: 80vh;
+    left: 43vw;
 }
