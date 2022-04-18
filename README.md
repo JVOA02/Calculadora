@@ -1,7 +1,12 @@
 
-# Calculadora_cont
-## Utilizando HTML, CSS e JavaScrip
-### Calculadora
+# 🧮 Calculadora_cont 🧮
+## 🖩 Utilizando HTML, CSS e JavaScrip 🖩
+### Calculadora 
+
+- Responsive calculadora usando HTML, CSS & JavaScript.
+- Compatibilidade com celular, tablet e computador.
+- Dark mode e light mode.
+- Computando adição, subitração, divisão e multiplicação.
 
 
 ───▓▓▓█▓█──▓█────▓█──▓█─.▓▓▓█
