@@ -1,6 +1,6 @@
 
 # 🧮Calculadora_cont🧮
-## 🖩 Utilizando HTML, CSS e JavaScrip 🖩
+## 📱 Utilizando HTML, CSS e JavaScrip 📱
 ### 📊 Calculadora 📊
 
 ## SOBRE O PROJETO
